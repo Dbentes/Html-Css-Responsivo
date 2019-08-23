@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+section#conteudo {
+    width: 1100px;
+    margin: auto;
+}
+
+iframe#frame-spec {
+    width: 380px;
+    height: 280px;
+    border: none; /*Remover a bordar*/
+    overflow: hidden; /*Remover a visualização do conteudo*/
+}
+
+iframe#frame-spec::-webkit-scrollbar { /*Esconder a barra de rolagem*/
+    display: none;
+}
+ 
+
+@media screen and (max-width: 500px) {
+    section#conteudo img {
+        width: auto;
+        height: 100px;
+        margin: auto;
+        background: url("../img/glass-esquema-marcado.jpg") no-repeat;
+        background-position: center;
+        background-size: 458px;
+       
+    }
+    nav#menu {
+        left: 20px;
+    }
+}
